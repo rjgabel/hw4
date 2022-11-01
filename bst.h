@@ -221,6 +221,7 @@ template <typename Key, typename Value> class BinarySearchTree {
     virtual void nodeSwap(Node<Key, Value>* n1, Node<Key, Value>* n2);
 
     // Add helper functions here
+  private:
     static void insert_helper(const std::pair<const Key, Value>& keyValuePair,
                               Node<Key, Value>* node);
     static Node<Key, Value>* internalFind_helper(const Key& key,
